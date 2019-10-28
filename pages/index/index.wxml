@@ -1,0 +1,45 @@
+<!--index.wxml-->
+<view class="main_container">
+   <!-- 头部 -->
+    <view class="main_header">
+      <navigator class="main_header_about">
+        <icon class="iconfont iconguanyuwomen header_font"></icon>
+        <text>关于我们</text>
+      </navigator>
+      <navigator class="main_header_product">
+          <icon class="iconfont iconweibiaoti11 header_font"></icon>
+          <text>产品展示</text>
+      </navigator>
+      <navigator class="main_header_contact">
+          <icon class="iconfont iconguanyuwomen header_font"></icon>
+          <text>联系我们</text>
+      </navigator>
+    </view>
+    <!-- 中间 -->
+    <view class="main_body">
+      <view class="main_body_image">
+          <image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
+          <image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
+          <image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
+          <image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
+          <image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
+          <image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
+          <image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
+          <image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
+          <image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
+          <image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
+          <image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
+          <image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
+      </view>
+    </view>
+    <!-- 尾部 -->
+    <!-- <view class="main_footer">
+      <view class="main_footer_page">首页asdas</view>
+      <view class="main_footer_contenter">联系人</view>
+    </view> -->
+    <!-- 打电话  -->
+    <view class="phone_call" bindtap="handlePhoneCall">
+      <icon class="iconfont iconweibiaoti1"></icon>
+    </view>
+</view>
+

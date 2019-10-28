@@ -1,0 +1,54 @@
+/**index.wxss**/
+.main_container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.main_header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.main_header text {
+    font-size: 20rpx;
+}
+.main_header_about,.main_header_product,.main_header_contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header_font {
+    font-size: 50rpx;
+}
+.main_body {
+    flex: 1;
+    overflow: auto;
+}
+.main_body_image {
+    display:flex;
+    flex-wrap: wrap;
+}
+.main_body_image image {
+    width: 50%;
+    padding: 20rpx;
+    box-sizing: border-box;
+}
+.phone_call {
+    position: fixed;
+    top: 500rpx;
+    right: 10px;
+}
+.phone_call .iconweibiaoti1 {
+    font-size: 80rpx;
+    color:black;
+}
+/* .main_footer {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background: green;
+} */
