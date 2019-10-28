@@ -2,15 +2,15 @@
 <view class="main_container">
    <!-- 头部 -->
     <view class="main_header">
-      <navigator class="main_header_about">
+      <navigator class="main_header_about" url="/pages/about/about" hover-class="navigator-hover">
         <icon class="iconfont iconguanyuwomen header_font"></icon>
         <text>关于我们</text>
       </navigator>
-      <navigator class="main_header_product">
+      <navigator class="main_header_product" url="/pages/product/product">
           <icon class="iconfont iconweibiaoti11 header_font"></icon>
           <text>产品展示</text>
       </navigator>
-      <navigator class="main_header_contact">
+      <navigator class="main_header_contact" url="/pages/contact/contact">
           <icon class="iconfont iconguanyuwomen header_font"></icon>
           <text>联系我们</text>
       </navigator>

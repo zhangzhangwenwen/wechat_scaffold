@@ -1,4 +1,5 @@
 /**index.wxss**/
+/*  头部  */
 .main_container {
     height: 100%;
     display: flex;
@@ -12,6 +13,9 @@
 .main_header text {
     font-size: 20rpx;
 }
+/* .navigator-hover {
+   color: gold;
+} */
 .main_header_about,.main_header_product,.main_header_contact {
     display: flex;
     flex-direction: column;
@@ -21,6 +25,7 @@
 .header_font {
     font-size: 50rpx;
 }
+/*  中间  */
 .main_body {
     flex: 1;
     overflow: auto;
@@ -34,6 +39,7 @@
     padding: 20rpx;
     box-sizing: border-box;
 }
+/*  电话图标  */
 .phone_call {
     position: fixed;
     top: 500rpx;

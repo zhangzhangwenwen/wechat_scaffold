@@ -1,11 +1,14 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/about/about",
+    "pages/product/product",
+    "pages/contact/contact"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "红星吊篮脚手架",
+    "navigationBarTitleText": "城峰吊篮脚手架",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
