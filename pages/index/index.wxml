@@ -11,7 +11,7 @@
           <text>产品展示</text>
       </navigator>
       <navigator class="main_header_contact" url="/pages/contact/contact">
-          <icon class="iconfont iconguanyuwomen header_font"></icon>
+          <icon class="iconfont iconlianxiwomen header_font"></icon>
           <text>联系我们</text>
       </navigator>
     </view>
