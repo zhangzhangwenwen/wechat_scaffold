@@ -1,1 +1,3 @@
-/* pages/product/product.wxss */
+.main_product {
+    display: flex;
+}

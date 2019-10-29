@@ -6,7 +6,7 @@
           <block wx:for="{{picList}}" wx:key="*this">
             <swiper-item>
               <view class="swiper_item_banner">
-                 <image class="swiper-item-image" aspectFit="true" style="width: 100%;height: 100%;" src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
+                 <image class="swiper-item-image" aspectFit="true" style="width:100%;height: 100%;" src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
               </view>
             </swiper-item>
           </block>

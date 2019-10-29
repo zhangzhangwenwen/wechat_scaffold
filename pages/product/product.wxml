@@ -1,2 +1,15 @@
 <!--pages/product/product.wxml-->
-<text>产品展示</text>
+<view class="main_product">
+    <view class="product-left">
+        <scroll-view scroll-y scroll-with-animation style="height: 100%">
+            <block wx:key="lists" wx:for="{{lists}}">
+                <view bindtap='jumpIndex' data-menuindex='{{index}}'>
+                <view>
+                    <text>{{item}}</text>
+                </view>
+                </view>
+            </block>
+        </scroll-view>
+    </view>
+    <view class="product-right"></view>
+</view>
