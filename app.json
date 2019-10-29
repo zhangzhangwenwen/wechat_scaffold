@@ -1,9 +1,10 @@
 {
   "pages": [
-    "pages/index/index",
+    "pages/home/home",
     "pages/about/about",
     "pages/product/product",
-    "pages/contact/contact"
+    "pages/contact/contact",
+    "pages/my/my"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -18,12 +19,16 @@
     "borderStyle": "black",
     "list": [
       {
-        "pagePath": "pages/index/index",
-        "text": "首页"
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "/image/shouye.png",
+        "selectedIconPath": "/image/shouye.png"
       },
       {
-        "pagePath": "pages/index/index",
-        "text": "我的"
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "/image/wode.png",
+        "selectedIconPath": "/image/wode.png"
       }
     ]
   },

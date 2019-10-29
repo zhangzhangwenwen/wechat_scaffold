@@ -4,6 +4,7 @@ const app = getApp()
 
 Page({
   data: {
+    picList: [1,2,3]
   },
   onShareAppMessage() {
     return {

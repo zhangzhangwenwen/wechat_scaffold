@@ -4,11 +4,13 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    overflow: auto;
 }
 .main_header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 15rpx;
 }
 .main_header text {
     font-size: 20rpx;
@@ -25,10 +27,14 @@
 .header_font {
     font-size: 50rpx;
 }
+/*  头部banner  */
+.swiper_item_banner {
+    height: 100%;
+}
 /*  中间  */
 .main_body {
     flex: 1;
-    overflow: auto;
+    /* overflow: auto; */
 }
 .main_body_image {
     display:flex;
