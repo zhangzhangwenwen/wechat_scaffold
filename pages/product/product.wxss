@@ -1,3 +1,39 @@
 .main_product {
     display: flex;
+    height: 100%;
+    box-sizing: border-box;
+    border-top: 1rpx solid #efefef;
+}
+/* 左侧导航栏 */
+.product-left {
+   flex: 0 0 190rpx;
+   height: 100%;
+   position: relative;
+   border-right: 1rpx solid #efefef;
+}
+.product_item {
+    text-align: center;
+    height: 200rpx;
+    line-height: 200rpx;
+}
+.product_item_text {
+    transition: 1s;
+    font-size: 30rpx;
+}
+.product_slider {
+    width: 100%;
+    height: 200rpx;
+    position: absolute;
+    box-sizing: border-box;
+    opacity: 0.5;
+    transition: 0.5s;
+    border-radius: 20rpx;
+    background: black;
+}
+.active {
+    /* color: white; */
+}
+/* 右侧展示栏 */
+.product-right {
+    flex: 1;
 }

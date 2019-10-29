@@ -2,11 +2,12 @@
 <view class="main_product">
     <view class="product-left">
         <scroll-view scroll-y scroll-with-animation style="height: 100%">
-            <block wx:key="lists" wx:for="{{lists}}">
-                <view bindtap='jumpIndex' data-menuindex='{{index}}'>
-                <view>
-                    <text>{{item}}</text>
-                </view>
+            <view  class="product_slider" style="top: {{ sliderTop +'rpx' }}"></view>
+            <block wx:key="lists" wx:for="{{ lists }}">
+                <view class="product_menu" bindtap='jumpIndex' data-menuindex='{{index}}'>
+                    <view class="product_item">
+                        <text class="product_item_text {{ indexId == index ? 'active' : ''}}">{{item}}</text>
+                    </view>
                 </view>
             </block>
         </scroll-view>

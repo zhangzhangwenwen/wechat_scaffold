@@ -8,39 +8,27 @@ Page({
     nbFrontColor: '#000000',
     nbBackgroundColor: '#ffffff',
     lists: [
-      "标题1", "标题二", "标题三", "标题四", "标题五", "标题六", "标题七", "标题八", "标题九", "标题十", "标题十一", "标题十二"
+      "吊篮", "脚手架", "吊篮安装图", "脚手架安装图"
     ],
     indexId: 0,
-
+    sliderTop: 0
   },
 
   // 左侧点击事件
   jumpIndex(e) {
-    console.log('测试')
     let index = e.currentTarget.dataset.menuindex
+    let sliderTop = index * 200
     let that = this
     that.setData({
-      indexId: index
+      indexId: index,
+      sliderTop
     });
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var that = this
-    wx.getSystemInfo({
-      success: function(res) {
-        that.setData({
-          winHeight: res.windowHeight
-        });
-      }
-    });
-    this.setData({
-      nbTitle: '新标题',
-      nbLoading: true,
-      nbFrontColor: '#ffffff',
-      nbBackgroundColor: '#000000',
-    })
+    
   },
 
   /**
