@@ -1,5 +1,8 @@
 /**app.wxss**/
 @import './iconfont.wxss';
+.iphone-x {
+  padding-bottom: 68rpx;
+}
 page{
   height: 100%;
 }

@@ -1,0 +1,12 @@
+/* components/phoneCall/phoneCall.wxss */
+@import '../../iconfont.wxss';
+/*  电话图标  */
+.phone_call {
+    position: fixed;
+    top: 500rpx;
+    right: 10px;
+}
+.phone_call .iconweibiaoti1 {
+    font-size: 80rpx;
+    color:black;
+}

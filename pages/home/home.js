@@ -2,25 +2,34 @@
 //获取应用实例
 const app = getApp()
 
+wx.getSystemInfo({
+    success: function(res) {
+    //model中包含着设备信息
+      console.log(res.model)
+        var model = res.model
+        if (model.search('iPhone X') != -1){
+            app.globalData.isIpx = true;
+        }else{
+           app.globalData.isIpx = false;
+       }
+    }
+ })
+
 Page({
   data: {
+    isPhonex: false,
     picList: [1,2,3]
   },
   onShareAppMessage() {
     return {
     }
   },
-  handlePhoneCall () {
-    wx.makePhoneCall({
-      phoneNumber: '18361482827' //仅为示例，并非真实的电话号码
-    })
-  },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
-  },
-  onLoad: function () {
+  onLoad () {
+    var isPhonex = app.globalData.isIpx;
+    if(isPhonex){
+      this.setData({
+        isPhonex
+      })
+    }
   }
 })

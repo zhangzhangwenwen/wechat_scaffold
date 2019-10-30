@@ -1,0 +1,4 @@
+<!--components/phoneCall/phoneCall.wxml-->
+<view class="phone_call" bindtap="handlePhoneCall">
+    <icon class="iconfont iconweibiaoti1"></icon>
+</view>

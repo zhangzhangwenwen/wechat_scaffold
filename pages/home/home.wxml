@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<view class="main_container">
+<view class="main_container" style="padding-bottom: 68rpx;">
     <!-- 头部banner -->
     <view class="main_header_banner">
         <swiper indicator-dots="true" autoplay="true">
@@ -44,14 +44,6 @@
           <image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
       </view>
     </view>
-    <!-- 尾部 -->
-    <!-- <view class="main_footer">
-      <view class="main_footer_page">首页asdas</view>
-      <view class="main_footer_contenter">联系人</view>
-    </view> -->
-    <!-- 打电话  -->
-    <view class="phone_call" bindtap="handlePhoneCall">
-      <icon class="iconfont iconweibiaoti1"></icon>
-    </view>
+    <phone-call></phone-call>
 </view>
 

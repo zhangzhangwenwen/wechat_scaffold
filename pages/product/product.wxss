@@ -6,7 +6,7 @@
 }
 /* 左侧导航栏 */
 .product-left {
-   flex: 0 0 190rpx;
+   flex: 0 0 180rpx;
    height: 100%;
    position: relative;
    border-right: 1rpx solid #efefef;

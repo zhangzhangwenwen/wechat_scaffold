@@ -11,7 +11,8 @@ Page({
       "吊篮", "脚手架", "吊篮安装图", "脚手架安装图"
     ],
     indexId: 0,
-    sliderTop: 0
+    sliderTop: 0,
+    productList: []
   },
 
   // 左侧点击事件
@@ -28,7 +29,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
   },
 
   /**

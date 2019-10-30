@@ -47,22 +47,3 @@
     padding: 20rpx;
     box-sizing: border-box;
 }
-/*  电话图标  */
-.phone_call {
-    position: fixed;
-    top: 500rpx;
-    right: 10px;
-}
-.phone_call .iconweibiaoti1 {
-    font-size: 80rpx;
-    color:black;
-}
-/* .main_footer {
-    display: flex;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
-    background: green;
-} */

@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/product/product",
     "pages/home/home",
+    "pages/product/product",
     "pages/about/about",
     "pages/contact/contact",
     "pages/my/my"
@@ -22,13 +22,13 @@
         "pagePath": "pages/home/home",
         "text": "首页",
         "iconPath": "/image/shouye.png",
-        "selectedIconPath": "/image/shouye.png"
+        "selectedIconPath": "/image/shouye-choose.png"
       },
       {
         "pagePath": "pages/my/my",
         "text": "我",
         "iconPath": "/image/wode.png",
-        "selectedIconPath": "/image/wode.png"
+        "selectedIconPath": "/image/wode-choose.png"
       }
     ]
   },
