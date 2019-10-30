@@ -12,5 +12,23 @@
             </block>
         </scroll-view>
     </view>
-    <view class="product-right"></view>
+    <view class="product-right">
+           <text class="product_title">吊篮产品</text>
+           <view class="product_pic">
+              <image src="https://7465-test-zhangwen-1300560139.tcb.qcloud.la/o_1dd7muf6d10td6d41jhl1lee1gag10.jpg?sign=d9a41ada52e40fdb24befc6edf8a83b0&t=1572404361"></image>
+              <image src="https://7465-test-zhangwen-1300560139.tcb.qcloud.la/o_1dd7muf6d10td6d41jhl1lee1gag10.jpg?sign=d9a41ada52e40fdb24befc6edf8a83b0&t=1572404361"></image>
+              <image src="https://7465-test-zhangwen-1300560139.tcb.qcloud.la/o_1dd7muf6d10td6d41jhl1lee1gag10.jpg?sign=d9a41ada52e40fdb24befc6edf8a83b0&t=1572404361"></image>
+              <image src="https://7465-test-zhangwen-1300560139.tcb.qcloud.la/o_1dd7muf6d10td6d41jhl1lee1gag10.jpg?sign=d9a41ada52e40fdb24befc6edf8a83b0&t=1572404361"></image>
+              <image src="https://7465-test-zhangwen-1300560139.tcb.qcloud.la/o_1dd7muf6d10td6d41jhl1lee1gag10.jpg?sign=d9a41ada52e40fdb24befc6edf8a83b0&t=1572404361"></image>
+              <image src="https://7465-test-zhangwen-1300560139.tcb.qcloud.la/o_1dd7muf6d10td6d41jhl1lee1gag10.jpg?sign=d9a41ada52e40fdb24befc6edf8a83b0&t=1572404361"></image>
+              <image src="https://7465-test-zhangwen-1300560139.tcb.qcloud.la/o_1dd7muf6d10td6d41jhl1lee1gag10.jpg?sign=d9a41ada52e40fdb24befc6edf8a83b0&t=1572404361"></image>
+              <image src="https://7465-test-zhangwen-1300560139.tcb.qcloud.la/o_1dd7muf6d10td6d41jhl1lee1gag10.jpg?sign=d9a41ada52e40fdb24befc6edf8a83b0&t=1572404361"></image>
+              <image src="https://7465-test-zhangwen-1300560139.tcb.qcloud.la/o_1dd7muf6d10td6d41jhl1lee1gag10.jpg?sign=d9a41ada52e40fdb24befc6edf8a83b0&t=1572404361"></image>
+              <image src="https://7465-test-zhangwen-1300560139.tcb.qcloud.la/o_1dd7muf6d10td6d41jhl1lee1gag10.jpg?sign=d9a41ada52e40fdb24befc6edf8a83b0&t=1572404361"></image>
+              <image src="https://7465-test-zhangwen-1300560139.tcb.qcloud.la/o_1dd7muf6d10td6d41jhl1lee1gag10.jpg?sign=d9a41ada52e40fdb24befc6edf8a83b0&t=1572404361"></image>
+              <image src="https://7465-test-zhangwen-1300560139.tcb.qcloud.la/o_1dd7muf6d10td6d41jhl1lee1gag10.jpg?sign=d9a41ada52e40fdb24befc6edf8a83b0&t=1572404361"></image>
+              <image src="https://7465-test-zhangwen-1300560139.tcb.qcloud.la/o_1dd7muf6d10td6d41jhl1lee1gag10.jpg?sign=d9a41ada52e40fdb24befc6edf8a83b0&t=1572404361"></image>
+              <image src="https://7465-test-zhangwen-1300560139.tcb.qcloud.la/o_1dd7muf6d10td6d41jhl1lee1gag10.jpg?sign=d9a41ada52e40fdb24befc6edf8a83b0&t=1572404361"></image>
+           </view>
+    </view>
 </view>

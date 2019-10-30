@@ -36,4 +36,19 @@
 /* 右侧展示栏 */
 .product-right {
     flex: 1;
+    padding: 10rpx;
+    overflow: auto;
+}
+.product_title {
+    text-align: center;
+}
+.product_pic {
+    display: flex;
+    flex-wrap: wrap;
+}
+.product_pic image {
+    width: 50%;
+    height: 300rpx;
+    box-sizing: border-box;
+    padding: 10rpx;
 }

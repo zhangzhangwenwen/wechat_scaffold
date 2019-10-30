@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/home/home",
     "pages/product/product",
+    "pages/home/home",
     "pages/about/about",
     "pages/contact/contact",
     "pages/my/my"
@@ -32,5 +32,6 @@
       }
     ]
   },
-  "sitemapLocation": "sitemap23.json"
+  "sitemapLocation": "sitemap23.json",
+  "cloud": true
 }
