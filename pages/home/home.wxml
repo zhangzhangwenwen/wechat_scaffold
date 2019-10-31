@@ -2,7 +2,7 @@
 <view class="main_container">
     <!-- 头部banner -->
     <view class="main_header_banner">
-        <swiper indicator-dots="true" autoplay="true">
+        <swiper class="main_header_swiper" indicator-dots="true" autoplay="true">
           <block wx:for="{{homeBanner}}" wx:key="*this">
             <swiper-item>
               <view class="swiper_item_banner">
@@ -31,7 +31,7 @@
     <view class="main_body">
       <view class="main_body_image">
           <block wx:for="{{homeProduct}}" wx:key="*this">
-              <image src="{{ item.src }}"></image>
+              <image class="main_body_image_item" src="{{item.show ? item.src : ''}}"></image>
           </block>
       </view>
     </view>

@@ -14,6 +14,7 @@ const formatNumber = n => {
   return n[1] ? n : '0' + n
 }
 
+// 接口请求
 const db = wx.cloud.database()
 const getCollectionData = async (collect) => {
   try {

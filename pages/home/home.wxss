@@ -30,6 +30,9 @@
 /*  头部banner  */
 .main_header_banner {
 }
+.main_header_swiper {
+    height: 450rpx;
+}
 .swiper_item_banner {
     height: 100%;
 }
@@ -44,6 +47,7 @@
 }
 .main_body_image image {
     width: 50%;
+    height: 350rpx;
     padding: 15rpx;
     box-sizing: border-box;
     border-radius: 70rpx;
