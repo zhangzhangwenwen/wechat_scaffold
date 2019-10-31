@@ -8,7 +8,7 @@ Page({
     picList: [1,2,3],
     homeProduct: [],
     homeBanner: [],
-    imageArr: []
+    domData: []
   },
   onShareAppMessage() {
     return {
@@ -25,16 +25,6 @@ Page({
   },
   // 获取主页banner数据
   async getHomeBannerData () {
-    // let that = this
-    // try {
-    //   return await util.getCollectionData('home_banner').then(res => {
-    //     that.setData({
-    //       homeBanner: res.data
-    //     })
-    //   })
-    // } catch (error) {
-    //   console.log(error)
-    // }
     let that = this
     util.getCollectionData('home_banner').then(res => {
       that.setData({
@@ -43,15 +33,12 @@ Page({
     })
   },
   //懒加载函数
-  getClientHeight (ret) {
+  getLazyLoad (ret) {
     let that = this
     let homeProduct = that.data.homeProduct
     wx.getSystemInfo({
       success: (res) => {
         let clientHeight = res.windowHeight;
-        let clientWidth = res.windowWidth;
-        // let ratio = 750 / clientWidth;
-        // let height = clientHeight * ratio;
         ret.forEach((item, index) => {
            if (item.top <= clientHeight) {
             homeProduct[index].show = true
@@ -61,17 +48,34 @@ Page({
       }
     })
   },
+  // 先获取数据
   onLoad () {
-    let that = this
     this.getHomeProductData()
     this.getHomeBannerData()
   },
   onReady () {
+    let time = setTimeout(() => {
+      clearTimeout(time)
+      time = null
+      this.getElement()
+    },300)  
+  },
+  // 获取元素
+  getElement(){
     let that = this
-    setTimeout(() => {
       wx.createSelectorQuery().selectAll('.main_body_image_item').boundingClientRect((ret)=>{
-        that.getClientHeight(ret)
-      }).exec()        
-    },300)
+        that.getLazyLoad(ret)
+      }).exec()
+  },
+  // 页面滚动事件
+  onPageScroll () {
+    this.debounce(this.getElement, 500)
+  },
+  // 防抖函数
+  debounce (fn, time) {
+    clearInterval(fn.id)
+    fn.id = setInterval(() => {
+       fn.call(this)
+    },time)
   }
 })
