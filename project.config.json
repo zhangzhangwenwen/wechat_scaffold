@@ -24,7 +24,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.0.4",
 	"appid": "wxcf24887d8327adf1",
-	"projectname": "scaffold",
+	"projectname": "wechat_scaffold",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
