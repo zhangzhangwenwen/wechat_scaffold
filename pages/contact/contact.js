@@ -17,11 +17,18 @@ Page({
         display: 'ALWAYS',
         textAlign: 'center'
       },
-      latitude: 23.099994,
-      longitude: 113.324520,
+      //119.418869,32.218379
+      latitude: 32.218379,
+      longitude: 119.418869,
       width: 30,
       height: 30
     }]
+  },
+  handlePhoneCall (event) {
+    let number = event.currentTarget.dataset.gid
+    wx.makePhoneCall({
+      phoneNumber: number //仅为示例，并非真实的电话号码
+    })
   },
   // 视野发生变化
   regionchange(e) {

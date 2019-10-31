@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "phone-call": "../../components/phoneCall/phoneCall"
+  }
 }

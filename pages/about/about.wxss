@@ -1,1 +1,23 @@
 /* pages/about/about.wxss */
+
+.about-main {
+    height: 100%;
+    overflow: hidden;
+}
+.about-us {
+    font-size: 45rpx;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 70rpx;
+}
+.about-us-pic {
+    text-align: center;
+    margin-top: 20rpx;
+}
+.about-us-pic image {
+    border-radius: 50%;
+}
+.project-text {
+    padding: 0 25rpx 0 25rpx;
+    margin-top: 30rpx;
+}

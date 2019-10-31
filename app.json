@@ -2,8 +2,8 @@
   "pages": [
     "pages/home/home",
     "pages/product/product",
-    "pages/about/about",
     "pages/contact/contact",
+    "pages/about/about",
     "pages/my/my"
   ],
   "window": {

@@ -8,5 +8,5 @@
 }
 .phone_call .iconweibiaoti1 {
     font-size: 80rpx;
-    color:black;
+    color:red;
 }

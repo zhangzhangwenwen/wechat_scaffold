@@ -1,1 +1,16 @@
 /* pages/contact/contact.wxss */
+.contact-us {
+    height: 100%;
+}
+.address {
+    margin-top: 50rpx;
+}
+.contact-phone {
+    margin-top: 10rpx;
+}
+.address,.contact-phone {
+    font-size: 30rpx;
+}
+.phone-number {
+    color: red;
+}

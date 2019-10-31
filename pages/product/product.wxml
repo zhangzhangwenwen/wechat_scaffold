@@ -20,5 +20,5 @@
                </block>
            </view>
     </view>
+    <phone-call></phone-call>
 </view>
-<phone-call></phone-call>

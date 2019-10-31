@@ -11,7 +11,6 @@ Component({
    * 组件的初始数据
    */
   data: {
-
   },
 
   /**
@@ -20,7 +19,7 @@ Component({
   methods: {
     handlePhoneCall () {
       wx.makePhoneCall({
-        phoneNumber: '18361482827' //仅为示例，并非真实的电话号码
+        phoneNumber: '13605281502' //仅为示例，并非真实的电话号码
       })
     }
   }

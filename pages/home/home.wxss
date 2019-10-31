@@ -44,6 +44,7 @@
 }
 .main_body_image image {
     width: 50%;
-    padding: 20rpx;
+    padding: 15rpx;
     box-sizing: border-box;
+    border-radius: 70rpx;
 }
