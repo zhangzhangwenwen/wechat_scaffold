@@ -58,7 +58,7 @@ Page({
   // 获取元素
   getElement(){
     let that = this
-      wx.createSelectorQuery().selectAll('.main_body_image_item').boundingClientRect((ret)=>{
+      wx.createSelectorQuery().selectAll('.main_body_image_view').boundingClientRect((ret)=>{
         that.getLazyLoad(ret)
       }).exec()
   },

@@ -6,7 +6,7 @@
 }
 /* 左侧导航栏 */
 .product-left {
-   flex: 0 0 180rpx;
+   flex: 0 0 150rpx;
    height: 100%;
    position: relative;
    border-right: 1rpx solid #efefef;
@@ -34,12 +34,12 @@
 .product-right {
     flex: 1;
     padding: 10rpx;
-    overflow: auto;
 }
 .product-right-classify {
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
+    overflow: auto
 }
 .product-right-classify image {
     width: 50%;

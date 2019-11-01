@@ -31,7 +31,9 @@
     <view class="main_body">
       <view class="main_body_image">
           <block wx:for="{{homeProduct}}" wx:key="*this">
-              <image class="main_body_image_item" src="{{item.show ? item.src : ''}}"></image>
+              <view class="main_body_image_view">
+                  <image src="{{ item.show ? item.src : '../../image/loading.png' }}" class="{{  item.show ? 'has_show' : 'has_no_show' }}"></image>
+              </view>
           </block>
       </view>
     </view>
