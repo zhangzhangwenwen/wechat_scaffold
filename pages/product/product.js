@@ -8,19 +8,24 @@ Page({
     nbFrontColor: '#000000',
     nbBackgroundColor: '#ffffff',
     lists: [
-      "吊篮", "脚手架", "吊篮安装图", "脚手架安装图"
+      {name: '吊篮', eng: 'diaolan_pic'},
+      {name: '吊篮安装图', eng: 'diaolan_work'},
+      {name: '升降平台', eng: 'up_down'}
     ],
     indexId: 0,
+    indexEng: '',
     sliderTop: 0,
-    productList: []
+    productList: [],
+    totalPicObject: {}
   },
 
   // 左侧点击事件
   jumpIndex(e) {
-    let index = e.currentTarget.dataset.menuindex
+    let current = typeof(e.detail.current) === 'number' ? e.detail.current.toString() : e.detail.current
+    if (current === this.data.indexId) return
+    let index = e.currentTarget.dataset.menuindex || current
     let sliderTop = index * 200
-    let that = this
-    that.setData({
+    this.setData({
       indexId: index,
       sliderTop
     });
@@ -28,16 +33,35 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
+  onLoad () {
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    let that = this
+    wx.getStorage({
+      key: 'homeProduct',
+      success(res){
+        let indexEng = that.data.lists[0]
+        that.setData({indexEng})
+        that.initPicData(res.data) // 初始化数据格式
+      }
+    })
   },
-
+  initPicData (val) {
+    let totalPicObject = this.data.totalPicObject
+    this.data.lists.forEach(item => {
+      if (!totalPicObject[item.eng]){totalPicObject[item.eng] = []}
+      totalPicObject[item.eng] = [...val.filter(t=>{ return ~t.src.indexOf(item.eng)})]
+    })
+    this.setData({totalPicObject})
+  },
+  // swiper滑动事件
+  handleCurrentChange (res) {
+    this.jumpIndex(res)
+  },
   /**
    * 生命周期函数--监听页面显示
    */

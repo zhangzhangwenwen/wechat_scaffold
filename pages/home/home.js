@@ -15,21 +15,16 @@ Page({
     }
   },
   // 获取主页产品数据
-  getHomeProductData () {
-    let that = this
-    util.getCollectionData('home_product').then(res => {
-      that.setData({
-        homeProduct: res.data.map(t => {t.show = false; return t})
-      })
+  async getHomeProductData () {
+    util.getCollectionData('home_product').then(({data}) => {
+      wx.setStorage({ key: 'homeProduct', data: data})
+      this.setData({homeProduct: data.map(t => {t.show = false; return t})})
     })
   },
   // 获取主页banner数据
   async getHomeBannerData () {
-    let that = this
-    util.getCollectionData('home_banner').then(res => {
-      that.setData({
-        homeBanner: res.data
-      })
+    util.getCollectionData('home_banner').then(({data}) => {
+      this.setData({ homeBanner: data})
     })
   },
   //懒加载函数
@@ -58,7 +53,7 @@ Page({
       clearTimeout(time)
       time = null
       this.getElement()
-    },300)  
+    },400)  
   },
   // 获取元素
   getElement(){

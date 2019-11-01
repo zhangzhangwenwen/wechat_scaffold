@@ -2,23 +2,26 @@
 <view class="main_product">
     <view class="product-left">
         <scroll-view scroll-y scroll-with-animation style="height: 100%">
-            <view  class="product_slider" style="top: {{ sliderTop +'rpx' }}"></view>
+            <view  class="product_slider" style="transform: translate(0, {{ sliderTop }}rpx)"></view>
             <block wx:key="lists" wx:for="{{ lists }}">
-                <view class="product_menu" bindtap='jumpIndex' data-menuindex='{{index}}'>
+                <view class="product_menu" bindtap='jumpIndex' data-menuindex="{{index + ''}}">
                     <view class="product_item">
-                        <text class="product_item_text {{ indexId == index ? 'active' : ''}}">{{item}}</text>
+                        <text class="product_item_text">{{item.name}}</text>
                     </view>
                 </view>
             </block>
         </scroll-view>
     </view>
     <view class="product-right">
-           <text class="product_title">吊篮产品</text>
-           <view class="product_pic">
-               <block wx:for="{{productList}}" wx:key="*this">
-                   <image class="product_pic_image" isLazy="true" :data-original="item.src"></image>
-               </block>
-           </view>
+        <swiper class="product-right-swiper" current="{{ indexId }}" bindchange="handleCurrentChange">
+            <block wx:for="{{ totalPicObject }}" wx:key="totalPicObject" wx:for-index="key" wx:for-item="value">
+                <swiper-item class="product-right-classify">
+                    <block wx:for="{{totalPicObject[key]}}" wx:key="*this">
+                        <image aspectFit="true" src="{{ item.src }}"></image>
+                    </block>
+                </swiper-item>
+            </block>
+        </swiper>
     </view>
     <phone-call></phone-call>
 </view>

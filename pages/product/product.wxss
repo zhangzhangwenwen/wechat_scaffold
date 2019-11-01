@@ -17,7 +17,7 @@
     line-height: 200rpx;
 }
 .product_item_text {
-    transition: 1s;
+    transition: transform 1s;
     font-size: 30rpx;
 }
 .product_slider {
@@ -30,25 +30,24 @@
     border-radius: 20rpx;
     background: black;
 }
-.active {
-    /* color: white; */
-}
 /* 右侧展示栏 */
 .product-right {
     flex: 1;
     padding: 10rpx;
     overflow: auto;
 }
-.product_title {
-    text-align: center;
-}
-.product_pic {
+.product-right-classify {
     display: flex;
     flex-wrap: wrap;
+    align-content: flex-start;
 }
-.product_pic image {
+.product-right-classify image {
     width: 50%;
-    height: 300rpx;
     box-sizing: border-box;
-    padding: 10rpx;
+    padding: 20rpx;
+    height: 350rpx;
+    border-radius: 100rpx;
+}
+.product-right-swiper {
+    height: 100%;
 }
