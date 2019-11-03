@@ -33,7 +33,6 @@
 /* 右侧展示栏 */
 .product-right {
     flex: 1;
-    padding: 10rpx;
 }
 .product-right-classify {
     display: flex;
@@ -44,9 +43,9 @@
 .product-right-classify image {
     width: 50%;
     box-sizing: border-box;
-    padding: 20rpx;
+    padding: 10rpx;
     height: 350rpx;
-    border-radius: 100rpx;
+    border-radius: 50rpx;
 }
 .product-right-swiper {
     height: 100%;

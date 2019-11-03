@@ -4,7 +4,7 @@
 .phone_call {
     position: fixed;
     top: 500rpx;
-    right: 10px;
+    right: 40rpx;
 }
 .phone_call .iconweibiaoti1 {
     font-size: 80rpx;
