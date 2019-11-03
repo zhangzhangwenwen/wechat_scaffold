@@ -21,9 +21,6 @@ Component({
       wx.makePhoneCall({
         phoneNumber: '18082899333' //仅为示例，并非真实的电话号码
       })
-    },
-    // 电话图标移动
-    handlePhoneMove (e) {
     }
   }
 })
