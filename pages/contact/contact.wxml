@@ -1,7 +1,7 @@
 <!--pages/contact/contact.wxml-->
 <view class="contact-us">
     <map id="map" longitude="119.418869" latitude="32.218379" scale="14" markers="{{markers}}" bindmarkertap="markertap" bindregionchange="regionchange" show-location style="width: 100%; height: 300px;"></map>
-    <view class="address">地址:江苏省镇江市润州区长江路289号红星广告有限公司</view>
+    <view class="address">地址:江苏省镇江市润州区长江路289号城峰建筑机械设备有限公司</view>
     <view class="contact-phone">
         联系电话:<text class="phone-number" bindtap="handlePhoneCall" data-gid="13605281502">18082899333</text>,
         <text class="phone-number" bindtap="handlePhoneCall" data-gid="13952855663">13605281502</text>

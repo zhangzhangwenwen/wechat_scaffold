@@ -13,7 +13,7 @@ Page({
         fontSize: 15,
         borderRadius: 10,
         padding: 2,
-        content: '红星吊篮脚手架出租',
+        content: '城峰建筑机械设备有限公司',
         display: 'ALWAYS',
         textAlign: 'center'
       },

@@ -1,2 +1,6 @@
 <!--pages/my/my.wxml-->
-<text>陈老板发家史介绍</text>
+<view class="me-main">
+    <view class="me-name">姓名: 陈兆兵</view>
+    <view class="me-where">籍贯: 江苏淮安人</view>
+    <view class="me-introduce">简介: 从事建筑设备租赁行业十年有余，公司创立之初主营脚手架租赁，后因业务发展需要，提供吊篮租赁，目前以吊篮租赁为主，也附带租赁脚手架和升降平台。</view>
+</view>
