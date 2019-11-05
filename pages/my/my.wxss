@@ -12,7 +12,7 @@
 }
 .me-name,.me-where,.me-introduce {
     margin-bottom: 10rpx;
-    font-size: 35rpx;
+    font-size: 34rpx;
 }
 .me-pic image{
   width: 65%;
