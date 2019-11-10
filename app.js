@@ -2,7 +2,7 @@
 App({
   onLaunch: function () {
     wx.cloud.init({
-      env: 'test-zhangwen',
+      env: 'env-zhangwen',
       traceUser: true,
     })
     // 展示本地存储能力

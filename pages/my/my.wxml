@@ -1,6 +1,6 @@
 <!--pages/my/my.wxml-->
 <view class="me-main">
-    <view class="me-pic"><image src="https://7465-test-zhangwen-1300560139.tcb.qcloud.la/me.jpg?sign=3ad588b26bdf9854433d3fcdebbe9d78&t=1572935838"></image></view>
+    <view class="me-pic"><image src="https://656e-env-zhangwen-1300649239.tcb.qcloud.la/me.jpg?sign=a2b8131173cedfd2a618411a42e575cc&t=1573392319"></image></view>
     <view class="me-name">姓名: 陈兆兵</view>
     <view class="me-where">籍贯: 江苏淮安人</view>
     <view class="me-introduce">简介: 从事建筑设备租赁行业十年有余，公司创立之初主营脚手架租赁，后因业务发展需要，提供吊篮租赁，目前以吊篮租赁为主，也附带租赁脚手架和升降平台。</view>

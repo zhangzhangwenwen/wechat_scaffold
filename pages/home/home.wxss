@@ -31,7 +31,7 @@
 .main_header_banner {
 }
 .main_header_swiper {
-    height: 450rpx;
+    height: 500rpx;
 }
 .swiper_item_banner {
     height: 100%;
