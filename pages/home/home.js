@@ -12,6 +12,8 @@ Page({
   },
   onShareAppMessage() {
     return {
+      title: '提供吊篮、脚手架以及升降平台的租赁～',
+      path: 'pages/home/home'
     }
   },
   // 获取主页产品数据
@@ -53,7 +55,7 @@ Page({
       clearTimeout(time)
       time = null
       this.getElement()
-    },400)  
+    },500)  
   },
   // 获取元素
   getElement(){
