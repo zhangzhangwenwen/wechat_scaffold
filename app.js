@@ -36,8 +36,19 @@ App({
         }
       }
     })
+    wx.getSystemInfo({
+      success: (res) => {
+        // 高度,宽度 单位为px
+        this.globalData.phoneLocation.left = res.windowWidth - 50
+        this.globalData.phoneLocation.top = 200
+      }
+    })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    phoneLocation: {
+      left: 0,
+      top: 0,
+    }
   }
 })

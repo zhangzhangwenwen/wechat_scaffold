@@ -38,6 +38,6 @@
           </block>
       </view>
     </view>
-    <phone-call></phone-call>
+    <phone-call wx:if="{{ currentRoute }}"></phone-call>
 </view>
 

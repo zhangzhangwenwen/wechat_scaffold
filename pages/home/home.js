@@ -8,13 +8,20 @@ Page({
     picList: [1,2,3],
     homeProduct: [],
     homeBanner: [],
-    domData: []
+    domData: [],
+    currentRoute: '',
   },
   onShareAppMessage() {
     return {
       title: '提供吊篮、脚手架以及升降平台的租赁～',
       path: 'pages/home/home'
     }
+  },
+  onShow() {
+    this.setData({currentRoute: 'pages/home/home'})
+  },
+  onHide () {
+    this.setData({currentRoute: ''})
   },
   // 获取主页产品数据
   async getHomeProductData () {
