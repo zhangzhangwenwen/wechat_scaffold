@@ -1,4 +1,4 @@
 <!--components/phoneCall/phoneCall.wxml-->
-<view class="phone_call" bindtap="handlePhoneCall">
+<view class="phone_call" bindtap="handlePhoneCall" bindtouchstart="phoneStart" catchtouchend="phoneEnd" catchtouchmove="phnoneMove" style="top:{{top}}px; left:{{left}}px; right:{{right}}px">
     <icon class="iconfont iconweibiaoti1"></icon>
 </view>
