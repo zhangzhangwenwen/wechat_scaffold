@@ -32,17 +32,6 @@ Component({
     })
   },
   detached () {
-    let locationObj = {
-      left: this.data.left,
-      top: this.data.top
-    }
-    wx.setStorage({
-      key: 'location',
-      data: locationObj,
-      success: function(res){
-        // success
-      }
-    })
   },
   /**
    * 组件的方法列表
