@@ -3,8 +3,8 @@
 /*  电话图标  */
 .phone_call {
     position: fixed;
-    /* top: 500rpx;
-    right: 40rpx; */
+    top: 500rpx;
+    right: 40rpx;
 }
 .phone_call .iconweibiaoti1 {
     font-size: 80rpx;

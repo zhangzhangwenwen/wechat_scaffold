@@ -18,7 +18,7 @@ Component({
     startPoint: null
   },
   attached () {
-    this.setInitLocation()
+    // this.setInitLocation()
     // 在组件实例进入页面节点树时执行
   },
   detached () {
@@ -49,40 +49,40 @@ Component({
       wx.makePhoneCall({
         phoneNumber: '18082899333' //仅为示例，并非真实的电话号码
       })
-    },
-    phoneStart (e) {
-      this.setData({startPoint: e.touches[0]})
-    },
-    // 移动结束
-    phoneEnd () {
-    },
-    // 电话移动
-    phnoneMove  (e) {
-      var endPoint = e.touches[e.touches.length - 1]
-      var translateX = endPoint.clientX - this.data.startPoint.clientX
-      var translateY = endPoint.clientY - this.data.startPoint.clientY
-      this.setData({startPoint: endPoint})
-      var buttonTop = this.data.top + translateY
-      var buttonLeft = this.data.left + translateX
-      //判断是移动否超出屏幕
-      if (buttonLeft + 40 >= this.data.windowWidth){
-        buttonLeft = this.data.windowWidth - 40;
-      }
-      if (buttonLeft <= 20){
-        buttonLeft = 20;
-      }
-      if (buttonTop <= 0){
-        buttonTop = 0
-      }
-      if (buttonTop + 40 >= this.data.windowHeight){
-        buttonTop = this.data.windowHeight - 40
-      }
-      this.setData({
-        top: buttonTop,
-        left: buttonLeft
-      })
-      app.globalData.phoneLocation.top = buttonTop
-      app.globalData.phoneLocation.left = buttonLeft
     }
+    // phoneStart (e) {
+    //   this.setData({startPoint: e.touches[0]})
+    // },
+    // // 移动结束
+    // phoneEnd () {
+    // },
+    // // 电话移动
+    // phnoneMove  (e) {
+    //   var endPoint = e.touches[e.touches.length - 1]
+    //   var translateX = endPoint.clientX - this.data.startPoint.clientX
+    //   var translateY = endPoint.clientY - this.data.startPoint.clientY
+    //   this.setData({startPoint: endPoint})
+    //   var buttonTop = this.data.top + translateY
+    //   var buttonLeft = this.data.left + translateX
+    //   //判断是移动否超出屏幕
+    //   if (buttonLeft + 40 >= this.data.windowWidth){
+    //     buttonLeft = this.data.windowWidth - 40;
+    //   }
+    //   if (buttonLeft <= 20){
+    //     buttonLeft = 20;
+    //   }
+    //   if (buttonTop <= 0){
+    //     buttonTop = 0
+    //   }
+    //   if (buttonTop + 40 >= this.data.windowHeight){
+    //     buttonTop = this.data.windowHeight - 40
+    //   }
+    //   this.setData({
+    //     top: buttonTop,
+    //     left: buttonLeft
+    //   })
+    //   app.globalData.phoneLocation.top = buttonTop
+    //   app.globalData.phoneLocation.left = buttonLeft
+    // }
   }
 })

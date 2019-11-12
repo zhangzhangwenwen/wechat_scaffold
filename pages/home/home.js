@@ -8,8 +8,7 @@ Page({
     picList: [1,2,3],
     homeProduct: [],
     homeBanner: [],
-    domData: [],
-    currentRoute: '',
+    domData: []
   },
   onShareAppMessage() {
     return {
@@ -17,11 +16,9 @@ Page({
       path: 'pages/home/home'
     }
   },
-  onShow() {
-    this.setData({currentRoute: 'pages/home/home'})
+  onShow() { 
   },
   onHide () {
-    this.setData({currentRoute: ''})
   },
   // 获取主页产品数据
   async getHomeProductData () {
