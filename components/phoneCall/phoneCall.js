@@ -47,7 +47,7 @@ Component({
     },
     handlePhoneCall () {
       wx.makePhoneCall({
-        phoneNumber: '18082899333' //仅为示例，并非真实的电话号码
+        phoneNumber: '18082099333' //仅为示例，并非真实的电话号码
       })
     }
     // phoneStart (e) {
